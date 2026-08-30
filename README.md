@@ -55,7 +55,7 @@ Obsidian Edition**: ICOR (Input, Control, Output, Refine), the
 productivity methodology by Paperless Movement / myICOR, implemented as a
 ready-to-use Obsidian vault. Best to be used in combination with:
 
-- **[myICOR INKLINE theme](https://community.obsidian.md/themes/icor-for-life-inkline)**,
+- **[ICOR for Life INKLINE theme](https://community.obsidian.md/themes/icor-for-life-inkline)**,
   the hand-drawn ICOR look, which styles mermaid diagrams natively in both
   its modes. INKLINE decides how a diagram looks; this viewer keeps that
   look at every zoom level.
