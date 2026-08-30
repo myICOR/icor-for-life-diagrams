@@ -1,11 +1,11 @@
-/* ICOR Diagrams - fullscreen viewer for rendered mermaid diagrams.
+/* ICOR for Life - Diagrams - fullscreen viewer for rendered mermaid diagrams.
  *
  * One job: every rendered mermaid block gets a small maximize button that
  * sits next to Obsidian's native edit affordance. Clicking it opens the
  * diagram in a fullscreen modal with mouse-wheel zoom around the cursor,
  * drag panning, two-finger pinch on touch, and a double-click reset.
  *
- * The zoom/pan transform math is shared with ICOR Focus (wirePointer):
+ * The zoom/pan transform math is shared with ICOR for Life - Focus (wirePointer):
  * world = (screen - center - pan) / zoom, and every zoom change re-anchors
  * the pan so the point under the cursor stays under the cursor.
  *

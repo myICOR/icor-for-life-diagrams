@@ -1,7 +1,7 @@
-# ICOR Diagrams
+# ICOR for Life - Diagrams
 
 A mermaid diagram is a picture of your thinking, and pictures deserve room.
-ICOR Diagrams gives every rendered mermaid block one extra affordance: a
+ICOR for Life - Diagrams gives every rendered mermaid block one extra affordance: a
 small fullscreen button, sitting right next to the native "edit this
 block" control. Click it and the diagram opens edge to edge: zoom in on
 the branch you care about, pan across the whole flow, and get back to
@@ -36,7 +36,7 @@ viewer always matches whatever theme you are running.
 
 ## Privacy: no network use at all
 
-ICOR Diagrams makes no network requests, has no telemetry, and stores
+ICOR for Life - Diagrams makes no network requests, has no telemetry, and stores
 nothing. There is nothing to configure and no account of any kind.
 
 ## Install
@@ -50,26 +50,26 @@ Works on desktop and mobile.
 
 ## ICOR for Life Obsidian Edition
 
-ICOR Diagrams is a quality-of-life surface of the **ICOR for Life
+ICOR for Life - Diagrams is a quality-of-life surface of the **ICOR for Life
 Obsidian Edition**: ICOR (Input, Control, Output, Refine), the
 productivity methodology by Paperless Movement / myICOR, implemented as a
 ready-to-use Obsidian vault. Best to be used in combination with:
 
-- **[ICOR for Life INKLINE theme](https://community.obsidian.md/themes/icor-for-life-inkline)**,
+- **[ICOR for Life - INKLINE theme](https://community.obsidian.md/themes/icor-for-life-inkline)**,
   the hand-drawn ICOR look, which styles mermaid diagrams natively in both
   its modes. INKLINE decides how a diagram looks; this viewer keeps that
   look at every zoom level.
-- **[ICOR Focus](https://obsidian.md/plugins?id=icor-for-life-focus)**, the gravity
+- **[ICOR for Life - Focus](https://obsidian.md/plugins?id=icor-for-life-focus)**, the gravity
   map of your attention: today's work orbits close, older work ripples
   outward. Same instinct as this viewer, which is to see the shape of a
   thing instead of scrolling through it.
-- **[ICOR Planner](https://obsidian.md/plugins?id=icor-for-life-planner)**, the weekly
+- **[ICOR for Life - Planner](https://obsidian.md/plugins?id=icor-for-life-planner)**, the weekly
   planning board: Todoist, ClickUp, starred email and Google Calendar
   synced into the vault, planned by drag and drop.
-- **[myICOR Connect](https://obsidian.md/plugins?id=icor-for-life-connect)**, your
+- **[ICOR for Life - Connect](https://obsidian.md/plugins?id=icor-for-life-connect)**, your
   app.myicor.com account inside the vault: the ICOR Journey courses from
   myicor.com next to your notes.
-- **[ICOR AI Chat](https://obsidian.md/plugins?id=icor-for-life-chat)**, your AI team
+- **[ICOR for Life - Chat](https://obsidian.md/plugins?id=icor-for-life-chat)**, your AI team
   in a tab beside your notes, working from your vault's own instructions. It
   drafts the mermaid a note needs; this viewer is where you read it back at
   full size.
