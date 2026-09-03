@@ -1,9 +1,9 @@
 {
   "id": "icor-for-life-diagrams",
   "name": "ICOR for Life - Diagrams",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "minAppVersion": "1.4.0",
-  "description": "Adds a fullscreen button to every rendered mermaid diagram: open it large, zoom around the cursor with the mouse wheel or a pinch, drag to pan, double-click to reset. Part of the ICOR for Life suite.",
+  "description": "Now part of ICOR for Life - Interface. Adds a fullscreen button to every rendered mermaid diagram: zoom around the cursor, drag to pan, double-click to reset. Steps aside when Interface is installed.",
   "author": "myICOR",
   "isDesktopOnly": false,
   "authorUrl": "https://myicor.com"

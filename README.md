@@ -1,5 +1,11 @@
 # ICOR for Life - Diagrams
 
+> **Moved.** Since 2026-09-03 this viewer ships inside
+> [ICOR for Life - Interface](https://github.com/myICOR/icor-for-life-interface)
+> as the "Diagrams" switch: same button, same modal. Install Interface and
+> this plugin steps aside on its own; you can then remove it. It stays
+> published for anyone who runs only this, and will not gain features.
+
 A mermaid diagram is a picture of your thinking, and pictures deserve room.
 ICOR for Life - Diagrams gives every rendered mermaid block one extra affordance: a
 small fullscreen button, sitting right next to the native "edit this

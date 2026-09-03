@@ -210,8 +210,23 @@ class DiagramModal extends Modal {
 
 /* ------------------------------------------------------------ plugin */
 
+/* THIS PLUGIN HAS MOVED. Since 2026-09-03 the fullscreen viewer lives inside
+ * ICOR for Life - Interface (id icor-for-life-interface), as the "Diagrams"
+ * switch, with the same button, the same modal and the same class names.
+ * This release exists so nobody gets two buttons on the way over: when
+ * Interface is enabled, this plugin does nothing at all. Both also guard on
+ * the same `.icor-diag-btn`, so even a vault that has not updated this one
+ * sees one button. The listing stays published for anyone who runs only
+ * this; it will not gain features. */
+const SUCCESSOR_ID = 'icor-for-life-interface';
+
 module.exports = class IcorDiagramsPlugin extends Plugin {
   onload() {
+    const plugins = this.app.plugins;
+    if (plugins && plugins.enabledPlugins && plugins.enabledPlugins.has(SUCCESSOR_ID)) {
+      console.info('ICOR for Life - Diagrams: stepping aside; ICOR for Life - Interface carries the fullscreen viewer now.');
+      return;
+    }
     // Reading view: Obsidian's built-in processor replaces the code block
     // with <div class="mermaid"><svg> asynchronously (mermaid.render is a
     // promise), so we poll the section briefly for the svg to appear.
