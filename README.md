@@ -5,6 +5,9 @@
 > as the "Diagrams" switch: same button, same modal. Install Interface and
 > this plugin steps aside on its own; you can then remove it. It stays
 > published for anyone who runs only this, and will not gain features.
+>
+> **Retired as a suite member.** Nothing new ships from this repo; a
+> release here is a deliberate tag, never a side effect of a push.
 
 A mermaid diagram is a picture of your thinking, and pictures deserve room.
 ICOR for Life - Diagrams gives every rendered mermaid block one extra affordance: a
@@ -53,6 +56,22 @@ Copy `main.js`, `manifest.json` and `styles.css` from the latest release
 into `.obsidian/plugins/icor-for-life-diagrams/` and enable the plugin in Settings,
 Community plugins. No build step: `main.js` is hand-written CommonJS.
 Works on desktop and mobile.
+
+## Releasing
+
+A release is cut only when a version tag is pushed. A plain push to `main`
+never releases anything.
+
+1. Bump the version in `manifest.json` and `versions.json` (new line, same `minAppVersion`).
+2. Push to `main`. Nothing ships yet.
+3. Flint reads the diff before ship. No read, no tag.
+4. Tag the commit with the bare version and push the tag:
+   `git tag -a 0.2.1 -m "ICOR for Life - Diagrams 0.2.1" && git push github 0.2.1`
+   (never `v0.2.1`: the Obsidian directory reads the tag as the version).
+
+The Release workflow refuses a tag that does not equal `manifest.json`'s
+version or that is not on `main`, then publishes `main.js`, `manifest.json` and `styles.css` with the commit subjects since the previous tag as notes.
+The nightly version gate still checks that tag, branch and release agree.
 
 ## ICOR for Life Obsidian Edition
 
