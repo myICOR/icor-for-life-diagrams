@@ -1,118 +1,35 @@
 # ICOR for Life - Diagrams
 
-> **Moved.** Since 2026-09-03 this viewer ships inside
+> **This has moved.** Since 2026-09-03 the viewer ships inside
 > [ICOR for Life - Interface](https://github.com/myICOR/icor-for-life-interface)
-> as the "Diagrams" switch: same button, same modal. Install Interface and
-> this plugin steps aside on its own; you can then remove it. It stays
-> published for anyone who runs only this, and will not gain features.
+> as the "Diagrams" switch: same button, same window. Install Interface and
+> this plugin steps aside on its own, and you can then remove it.
 >
-> **Retired as a suite member.** Nothing new ships from this repo; a
-> release here is a deliberate tag, never a side effect of a push.
+> It stays published for anyone running only this, and will not gain
+> features.
 
-A mermaid diagram is a picture of your thinking, and pictures deserve room.
-ICOR for Life - Diagrams gives every rendered mermaid block one extra affordance: a
-small fullscreen button, sitting right next to the native "edit this
-block" control. Click it and the diagram opens edge to edge: zoom in on
-the branch you care about, pan across the whole flow, and get back to
-your note with a single keypress.
+**Give a diagram the room it needs.**
+
+Every rendered mermaid block gets one small fullscreen button, next to
+Obsidian's own edit control. Click it and the diagram opens edge to edge:
+zoom into the branch you care about, pan across the whole flow, and press
+Escape to get back to your note.
 
 One button, one job. No settings, no sidebar, no new panes.
 
-**Beta release.** This plugin works and is in daily use in a real vault,
-but you will find rough edges. If something looks off, open an issue on
-this repo and it gets fixed fast.
+Part of the [ICOR for Life](https://myicor.com) suite.
 
-## The viewer
+## What it touches
 
-- **Mouse wheel** zooms around the cursor: the point under your pointer
-  stays under your pointer (0.2x to 8x)
-- **Drag** to pan anywhere
-- **Double-click** resets to the fitted view
-- **Esc** closes the viewer
-- **Touch**: one-finger pan, two-finger pinch to zoom
-- **Keyboard**: `+` / `-` zoom, `0` refits, arrow keys pan; small
-  zoom and reset buttons sit bottom-right
-- Diagrams render in your current theme, dark and light alike
+- **Nothing.** It adds a button to diagrams Obsidian has already rendered.
 
-The button appears in both reading view and live preview. In live preview
-it sits to the left of Obsidian's own `</>` edit button, so the two
-controls read as one row: edit the source, or see it big. The `</>` toggle
-is Obsidian's; this plugin adds only the fullscreen button beside it.
+**It makes no network connection and starts no process.**
 
-This plugin styles nothing and renders nothing itself. It opens the
-mermaid diagram Obsidian has already drawn on the page, which is why the
-viewer always matches whatever theme you are running.
+## Support
 
-## Privacy: no network use at all
+Open an issue on this repository. For security problems, see `SECURITY.md`.
 
-ICOR for Life - Diagrams makes no network requests, has no telemetry, and stores
-nothing. There is nothing to configure and no account of any kind.
+## Licence
 
-## Install
-
-Requires Obsidian 1.4.0 or newer.
-
-Copy `main.js`, `manifest.json` and `styles.css` from the latest release
-into `.obsidian/plugins/icor-for-life-diagrams/` and enable the plugin in Settings,
-Community plugins. No build step: `main.js` is hand-written CommonJS.
-Works on desktop and mobile.
-
-## Releasing
-
-A release is cut only when a version tag is pushed. A plain push to `main`
-never releases anything.
-
-1. Bump the version in `manifest.json` and `versions.json` (new line, same `minAppVersion`).
-2. Push to `main`. Nothing ships yet.
-3. Flint reads the diff before ship. No read, no tag.
-4. Tag the commit with the bare version and push the tag:
-   `git tag -a 0.2.1 -m "ICOR for Life - Diagrams 0.2.1" && git push github 0.2.1`
-   (never `v0.2.1`: the Obsidian directory reads the tag as the version).
-
-The Release workflow refuses a tag that does not equal `manifest.json`'s
-version or that is not on `main`, then publishes `main.js`, `manifest.json` and `styles.css` with the commit subjects since the previous tag as notes.
-The nightly version gate still checks that tag, branch and release agree.
-
-## ICOR for Life Obsidian Edition
-
-ICOR for Life - Diagrams is a quality-of-life surface of the **ICOR for Life
-Obsidian Edition**: ICOR (Input, Control, Output, Refine), the
-productivity methodology by Paperless Movement / myICOR, implemented as a
-ready-to-use Obsidian vault. Best to be used in combination with:
-
-- **[ICOR for Life - INKLINE theme](https://community.obsidian.md/themes/icor-for-life-inkline)**,
-  the hand-drawn ICOR look, which styles mermaid diagrams natively in both
-  its modes. INKLINE decides how a diagram looks; this viewer keeps that
-  look at every zoom level.
-- **[ICOR for Life - Focus](https://obsidian.md/plugins?id=icor-for-life-focus)**, the gravity
-  map of your attention: today's work orbits close, older work ripples
-  outward. Same instinct as this viewer, which is to see the shape of a
-  thing instead of scrolling through it.
-- **[ICOR for Life - Planner](https://obsidian.md/plugins?id=icor-for-life-planner)**, the weekly
-  planning board: Todoist, ClickUp, starred email and Google Calendar
-  synced into the vault, planned by drag and drop.
-- **[ICOR for Life - Connect](https://obsidian.md/plugins?id=icor-for-life-connect)**, your
-  app.myicor.com account inside the vault: the ICOR Journey courses from
-  myicor.com next to your notes.
-- **[ICOR for Life - Chat](https://obsidian.md/plugins?id=icor-for-life-chat)**, your AI team
-  in a tab beside your notes, working from your vault's own instructions. It
-  drafts the mermaid a note needs; this viewer is where you read it back at
-  full size.
-
-The complete, preconfigured experience (theme, all plugins, the seven-room
-vault structure and the AI team) ships free as the **ICOR for Life**
-vault: https://myicor.com
-
-## License
-
-What you can do: install it, run it, read the code, modify your own copy,
-and use it in your own business. What you cannot do: sell it, redistribute
-it, or offer it (original or modified) as your own product or service to
-others. Contributions: send a pull request. See `CONTRIBUTING.md`;
-submitting one grants Paperless Movement the rights described in Section 7
-of the LICENSE. This is not open source. It is source-available: the code
-is visible, personal and business use are free, resale and republishing
-are not. Bundled third-party components keep their own licenses; see
-`THIRD-PARTY-NOTICES.md`.
-
-Full text in LICENSE. Machine-readable identifier: LicenseRef-ICOR-Source-Available-1.0.
+Source-available, see `LICENSE`. Not open source. Bundled third-party
+components: see `THIRD-PARTY-NOTICES.md`.
